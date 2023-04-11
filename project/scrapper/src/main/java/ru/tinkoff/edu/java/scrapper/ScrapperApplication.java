@@ -17,6 +17,7 @@ import ru.tinkoff.edu.java.scrapper.schedule.LinkUpdateScheduler;
 public class ScrapperApplication {
     public static void main(String[] args) {
         var ctx = SpringApplication.run(ScrapperApplication.class, args);
-//
+
+
     }
 }

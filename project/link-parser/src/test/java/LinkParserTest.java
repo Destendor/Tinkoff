@@ -20,12 +20,12 @@ public class LinkParserTest {
 
     @BeforeAll
     static void init() {
-        validGitHubLink = "https://github.com/lwbeamer/asm-like-language";
+        validGitHubLink = "https://github.com/lwboomer/asm-like-language";
         validStackOverflowLink = "https://stackoverflow.com/questions/2336692/java-multiple-class-declarations-in-one-file";
         gitHubNotRepoLink = "https://github.com/issues";
         stackOverflowNotQuestionLink = "https://stackoverflow.co/talent";
         emptyLink = "";
-        withoutProtocolLink = "github.com/lwbeamer/asm-like-language";
+        withoutProtocolLink = "github.com/lwboomer/asm-like-language";
         unknownHostLink = "https://vk.com/feed";
         invalidLink = "somethingNotValid";
     }
@@ -35,7 +35,7 @@ public class LinkParserTest {
     @DisplayName("Тест для проверки валидной ссылки с GitHub")
     void checkValidGitHubLink() {
         LinkParser parser = new LinkParser();
-        Assertions.assertEquals(new GithubParseResult("lwbeamer", "asm-like-language"), parser.parseUrl(validGitHubLink), "Тест не пройден, проверьте реузультат");
+        Assertions.assertEquals(new GithubParseResult("lwboomer", "asm-like-language"), parser.parseUrl(validGitHubLink), "Тест не пройден, проверьте реузультат");
     }
 
 

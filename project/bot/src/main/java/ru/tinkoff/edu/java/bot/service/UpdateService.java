@@ -12,8 +12,6 @@ import java.util.Arrays;
 public class UpdateService {
 
 
-    //Этот метод - заглушка, поведение будет позже. Исключения для проверки ControllerAdvice'а.
-    //P.S. В Scrapper добавлена примерная имитация поведения с простенькой моделью и репозиторием.
     public void updateLink(LinkUpdate linkUpdate) {
 
         if (linkUpdate.id() == 42 && Arrays.stream(linkUpdate.tgChatIds()).anyMatch(c -> c == 42))
