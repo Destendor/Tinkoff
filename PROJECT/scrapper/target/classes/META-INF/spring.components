@@ -1,0 +1,17 @@
+ru.tinkoff.edu.java.scrapper.ScrapperApplication=org.springframework.stereotype.Component,org.springframework.boot.SpringBootConfiguration
+ru.tinkoff.edu.java.scrapper.advice.AppExceptionHandler=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.scrapper.configuration.ApplicationConfig=org.springframework.boot.context.properties.ConfigurationProperties
+ru.tinkoff.edu.java.scrapper.configuration.ClientConfiguration=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.scrapper.configuration.LinkParserConfiguration=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.scrapper.mapper.LinkRowMapper=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.scrapper.mapper.SubscriptionRowMapper=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.scrapper.mapper.UserRowMapper=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.scrapper.repository.LinkJdbcTemplateRepository=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.scrapper.repository.SubscriptionJdbcTemplateRepository=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.scrapper.repository.UserJdbcTemplateRepository=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.scrapper.rest.ChatRestController=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.scrapper.rest.LinkRestController=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.scrapper.schedule.LinkUpdateScheduler=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.scrapper.service.jdbc.JdbcLinkUpdateService=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.scrapper.service.jdbc.JdbcSubscriptionService=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.scrapper.service.jdbc.JdbcTgChatService=org.springframework.stereotype.Component
