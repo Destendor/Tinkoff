@@ -1,0 +1,13 @@
+ru.tinkoff.edu.java.bot.BotApplication=org.springframework.stereotype.Component,org.springframework.boot.SpringBootConfiguration
+ru.tinkoff.edu.java.bot.advice.AppExceptionHandler=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.bot.commands.HelpCommand=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.bot.commands.ListCommand=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.bot.commands.StartCommand=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.bot.commands.TrackCommand=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.bot.commands.UntrackCommand=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.bot.configuration.ApplicationConfig=org.springframework.boot.context.properties.ConfigurationProperties
+ru.tinkoff.edu.java.bot.configuration.BotConfiguration=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.bot.configuration.ClientConfiguration=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.bot.configuration.LinkParserConfiguration=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.bot.rest.BotRestController=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.bot.service.UpdateServiceImpl=org.springframework.stereotype.Component
