@@ -1,0 +1,17 @@
+ru.tinkoff.edu.java.scrapper.ScrapperApplication=org.springframework.stereotype.Component,org.springframework.boot.SpringBootConfiguration
+ru.tinkoff.edu.java.scrapper.advice.AppExceptionHandler=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.scrapper.configuration.ApplicationConfig=org.springframework.boot.context.properties.ConfigurationProperties
+ru.tinkoff.edu.java.scrapper.configuration.ClientConfiguration=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.scrapper.configuration.HTTPConfiguration=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.scrapper.configuration.LinkParserConfiguration=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.scrapper.configuration.RabbitMQConfiguration=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.scrapper.configuration.database.acess.JdbcAccessConfiguration=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.scrapper.configuration.database.acess.JooqAccessConfiguration=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.scrapper.configuration.database.acess.JpaAccessConfiguration=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.scrapper.model.jpa.LinkEntity=jakarta.persistence.Entity,jakarta.persistence.Table
+ru.tinkoff.edu.java.scrapper.model.jpa.UserEntity=jakarta.persistence.Entity,jakarta.persistence.Table
+ru.tinkoff.edu.java.scrapper.repository.jpa.JpaLinkRepository=org.springframework.data.repository.Repository
+ru.tinkoff.edu.java.scrapper.repository.jpa.JpaUserRepository=org.springframework.data.repository.Repository
+ru.tinkoff.edu.java.scrapper.rest.ChatRestController=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.scrapper.rest.LinkRestController=org.springframework.stereotype.Component
+ru.tinkoff.edu.java.scrapper.schedule.LinkUpdateScheduler=org.springframework.stereotype.Component
