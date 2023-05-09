@@ -20,7 +20,7 @@ import ru.tinkoff.edu.java.scrapper.service.jpa.impl.JpaTgChatServiceImpl;
 
 import java.util.List;
 
-@SpringBootTest(classes = {ScrapperApplication.class, TestConfiguration.class, JpaAccessConfiguration.class, UserRowMapper.class})
+@SpringBootTest(properties = {"app.data-base-access-type=jpa"},classes = {ScrapperApplication.class, TestConfiguration.class, JpaAccessConfiguration.class, UserRowMapper.class})
 public class JpaTgChatServiceTest extends IntegrationEnvironment {
 
     @Autowired
@@ -32,7 +32,12 @@ public class JpaTgChatServiceTest extends IntegrationEnvironment {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
-
+    /*
+    т.к. Hibernate flush'ит данные в таблицы в конце транзакции, поэтому если пометить
+    тесты аннотацией Transactional, то внутри теста будет обращение к данным, которые ещё в таблицу
+    не были сохранены. Из-за этого я убрал Transactional над тестами, как это было дял jdbc и jooq
+    и очищаю таблицы после каждого теста вручную - откатываюсь в начальное состояние
+     */
     @AfterEach
     public void clearDatabase(){
         jdbcTemplate.update("delete from user_link");

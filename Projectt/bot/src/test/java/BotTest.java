@@ -62,7 +62,7 @@ public class BotTest {
         listLink.add(new Link(1L, URI.create("https://github.com/Destendor/Tinkoff")));
         listLink.add(new Link(2L, URI.create("https://stackoverflow.com/questions/512877/why-cant-i-define-a-static-method-in-a-java-interface")));
         Mockito.when(scrapperClient.getLinks(42L)).thenReturn(
-                new ListLinkResponse(listLink, listLink.size())
+            new ListLinkResponse(listLink, listLink.size())
         );
 
         EnumMap<CommandsEnum, Command> map = new EnumMap<>(CommandsEnum.class);
@@ -87,7 +87,7 @@ public class BotTest {
     @DisplayName("Тест команды /list, когда список ссылок пустой")
     public void listCommandTestEmpty() {
         Mockito.when(scrapperClient.getLinks(42L)).thenReturn(
-                new ListLinkResponse(new ArrayList<>(), 0)
+            new ListLinkResponse(new ArrayList<>(), 0)
         );
 
 

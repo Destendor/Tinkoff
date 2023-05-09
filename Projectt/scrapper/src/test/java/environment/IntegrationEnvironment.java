@@ -52,8 +52,8 @@ public abstract class IntegrationEnvironment {
     static {
         POSTGRES_CONTAINER = new PostgreSQLContainer(IMAGE_VERSION)
                 .withDatabaseName("scrapper")
-                .withUsername("boomer")
-                .withPassword("123456");
+                .withUsername("lwbeamer")
+                .withPassword("2281337");
 
 
         POSTGRES_CONTAINER.start();

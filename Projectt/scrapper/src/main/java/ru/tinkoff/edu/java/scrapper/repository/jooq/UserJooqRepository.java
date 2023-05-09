@@ -9,6 +9,7 @@ import ru.tinkoff.edu.java.scrapper.repository.jdbcAndJooqContract.UserRepositor
 
 import java.util.List;
 
+import static ru.tinkoff.edu.java.scrapper.domain.jooq.tables.User.*;
 
 @Slf4j
 public class UserJooqRepository implements UserRepository {

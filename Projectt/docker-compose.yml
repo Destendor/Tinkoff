@@ -5,8 +5,8 @@ services:
     ports:
       - 5432:5432
     environment:
-      - POSTGRES_USER=boomer
-      - POSTGRES_PASSWORD=123456
+      - POSTGRES_USER=lwbeamer
+      - POSTGRES_PASSWORD=2281337
       - POSTGRES_DB=scrapper
     volumes:
       - link-service-data:/var/lib/postgresql/data
@@ -22,8 +22,8 @@ services:
       - --changelog-file=master.xml
       - --driver=org.postgresql.Driver
       - --url=jdbc:postgresql://postgresql:5432/scrapper
-      - --username=boomer
-      - --password=123456
+      - --username=lwbeamer
+      - --password=2281337
       - update
     volumes:
       - ./migrations:/liquibase/changelog
@@ -38,8 +38,8 @@ services:
       - 15672:15672
       - 5672:5672
     environment:
-      - RABBITMQ_DEFAULT_USER=boomer
-      - RABBITMQ_DEFAULT_PASS=123456
+      - RABBITMQ_DEFAULT_USER=lwbeamer
+      - RABBITMQ_DEFAULT_PASS=2281337
     volumes:
       - rabbitmq-state:/var/lib/rabbitmq
     networks:
